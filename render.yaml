@@ -15,35 +15,35 @@ services:
           name: wifi-billing-db
           property: connectionString
       - key: JWT_SECRET
-        fromSecret: jwt_secret
+        sync: false
       - key: ADMIN_USERNAME
-        fromSecret: admin_username
+        sync: false
       - key: ADMIN_PASSWORD
-        fromSecret: admin_password
+        sync: false
       - key: ADMIN_EMAIL
-        fromSecret: admin_email
+        sync: false
       - key: MPESA_ENABLED
         value: "true"
       - key: MPESA_CONSUMER_KEY
-        fromSecret: mpesa_consumer_key
+        sync: false
       - key: MPESA_CONSUMER_SECRET
-        fromSecret: mpesa_consumer_secret
+        sync: false
       - key: MPESA_SHORTCODE
-        fromSecret: mpesa_shortcode
+        sync: false
       - key: MPESA_PASSKEY
-        fromSecret: mpesa_passkey
+        sync: false
       - key: MPESA_CALLBACK_URL
-        fromSecret: mpesa_callback_url
+        sync: false
       - key: MIKROTIK_ENABLED
-        fromSecret: mikrotik_enabled
+        sync: false
       - key: MIKROTIK_HOST
-        fromSecret: mikrotik_host
+        sync: false
       - key: MIKROTIK_USER
-        fromSecret: mikrotik_user
+        sync: false
       - key: MIKROTIK_PASSWORD
-        fromSecret: mikrotik_password
+        sync: false
       - key: MIKROTIK_PORT
-        fromSecret: mikrotik_port
+        sync: false
       - key: LOAN_WIFI_DURATION_HOURS
         value: "1"
 
